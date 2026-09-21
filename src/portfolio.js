@@ -2,9 +2,9 @@ export const profile = {
   name: '刘丹钰', romanized: 'LIU DANYU', email: '2984505134@qq.com',
   school: '湖南工业大学', major: '陶瓷艺术设计', education: '本科 · 2023.09—2027.06',
   bio: '我叫刘丹钰，就读于湖南工业大学陶瓷艺术设计专业。我的创作涉及陶瓷与图案设计、平面视觉、绘画和摄影，喜欢从日常的形态与色彩中寻找表达。',
-  tools: ['Photoshop', 'Illustrator', 'Rhino', 'Blender', 'Lightroom Classic', 'KeyShot'],
+  tools: ['Photoshop', 'Illustrator', 'Figma', 'Lightroom Classic', 'Rhino', 'Blender', 'Cinema 4D', 'Maya', 'KeyShot', 'ChatGPT', 'Claude', 'Cursor'],
   experience: '曾担任「向艺而行」展览物料设计师，参与物料设计、小组分工与落地协调。',
-  certificates: '英语四级 · 全国计算机二级',
+  certificates: '普通话二级乙等 · C1驾驶证',
 };
 export const themes = [
   {id:'form',name:'形态',description:'从自然曲线，\n到画面中的形。'},
