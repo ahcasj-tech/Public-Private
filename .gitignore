@@ -10,3 +10,5 @@ Thumbs.db
 npm-debug.log*
 yarn-error.log*
 .vercel
+
+.vercel
