@@ -1,3 +1,5 @@
+import photography from './photography.json';
+
 export const profile = {
   name: '刘丹钰', romanized: 'LIU DANYU', email: '2984505134@qq.com',
   school: '湖南工业大学', major: '陶瓷艺术设计', education: '本科 · 2023.09—2027.06',
@@ -33,10 +35,10 @@ export const works = [
   {
     id:'photography',number:'03',title:'摄影',subtitle:'日常观察',category:'摄影作品',themes:['形态','色彩'],
     image:artwork('photo-1.webp'),alt:'浅色天空下有红框窗户和岁月痕迹的老楼立面',
-    intro:'建筑、枝叶与天空，\n日常里的停顿。',
-    description:'三张摄影作品记录建筑立面、街道电线与枝叶。不同场景里的线条、光影和色彩，构成日常观察的切片。',
-    process:'老楼窗框与立面形成纵向节奏，电线和停驻的鸟构成斜向排列，蓝天与暖色枝叶形成对照。第二张作品的原文件记录为「9月28日18：18 醴陵国瓷大道」。',
-    gallery:[asset('photo',1,'建筑立面'),asset('photo',2,'9月28日18：18 · 醴陵国瓷大道'),asset('photo',3,'枝叶与蓝天')],
+    intro:'街巷、山水与光影，\n日常里的停顿。',
+    description:`${photography.length} 张摄影作品，记录建筑与街巷、山水与田野，也关注窗格、枝叶和日常器物中的细节。从城市到自然，以不同场景中的线条、光影与色彩串起日常观察。`,
+    process:'门廊、窗格与电线形成画面中的线条；湖面和拱桥带来倒影；远山、田野与树林呈现不同的光线和色彩。第二张作品的原文件记录为「9月28日18：18 醴陵国瓷大道」，末张为《向上看》。',
+    gallery:photography.map(({index,label})=>({...asset('photo',index,label),thumbnail:artwork(`photo-${index}-thumb.webp`)})),
   },
   {
     id:'applications',number:'04',title:'果点 · 应用',subtitle:'FRUIT DOTS · 从平面到日常',category:'视觉应用',themes:['色彩','秩序'],

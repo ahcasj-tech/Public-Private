@@ -10,6 +10,10 @@ When implementing from a selected generated mock, treat that image as the source
 
 Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts/prepare-sites-build.mjs`, and `tests/sites-worker.test.mjs` intact so the same local prototype can be handed to Sites. Before a Sites handoff, run `npm run build` and `npm run test:sites`; the build must leave `dist/client/index.html`, `dist/server/index.js`, and `dist/.openai/hosting.json`.
 
+## Photography update (2026-10-19)
+
+The owner requested all 25 photos in the local photography folder be included in the existing portfolio. Keep the current photography entry and its original first three images, followed by the additional 22 photos. `src/photography.json` holds the ordered gallery labels; `scripts/import-photography.py` imports the supplied originals as full-frame WebP images and separate thumbnails. Preserve the original files and the existing site design. The active public site is https://ahcasj-tech.github.io/Public-Private/.
+
 ## Responsive pass (2026-09-22)
 
 Owner asked for phone (375/390/430), tablet (768) and desktop (1440) support plus a Vercel deploy, without redesigning the approved direction. Keep pale lavender, condensed ultramarine title, the spatial artwork map and the thematic connections.
